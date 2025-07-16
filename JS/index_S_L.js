@@ -1,11 +1,12 @@
-let currentStep = 1;
-const totalSteps = 4;
-let uploadedFiles = [];
+document.addEventListener("DOMContentLoaded", function () {
+  let currentStep = 1;
+  const totalSteps = 4;
+  let uploadedFiles = [];
 
-// Inicializar fechas
-const today = new Date().toISOString().split('T')[0];
-document.getElementById('start_date').min = today;
-document.getElementById('end_date').min = today;
+  // Inicializar fechas
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('start_date').min = today;
+  document.getElementById('end_date').min = today;
 
 function showNotification(message, type = 'error') {
     const notification = document.getElementById('notification');
@@ -284,3 +285,4 @@ document.getElementById('start_date').addEventListener('change', function () {
 
 // Inicializar
 updateButtons();
+});
