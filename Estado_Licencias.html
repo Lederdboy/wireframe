@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Estado de Licencias - Wireframe</title>
+    <link rel="stylesheet" href="style/style_E_L.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Dashboard - Estado de Licencias</h1>
+        <button class="btn" onclick="window.location.href='Dashboard_Principal.html'">←  Regresar</button>
+    </div>
+
+    <div class="container">
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number pending">24</div>
+                <div class="stat-label">Pendientes de Atención</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number observed">12</div>
+                <div class="stat-label">Observados</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number attended">18</div>
+                <div class="stat-label">Atendidos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number total">54</div>
+                <div class="stat-label">Total Licencias</div>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <h3>Filtros de Búsqueda</h3>
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label>N° Ticket</label>
+                    <input type="text" placeholder="Ingrese número">
+                </div>
+                <div class="filter-group">
+                    <label>Solicitante</label>
+                    <input type="text" placeholder="Nombre del solicitante">
+                </div>
+                <div class="filter-group">
+                    <label>Sucursal</label>
+                    <select>
+                        <option value="">Todas</option>
+                        <option value="sucursal1">Sucursal 1</option>
+                        <option value="sucursal2">Sucursal 2</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Estado</label>
+                    <select>
+                        <option value="">Todos</option>
+                        <option value="pendiente">Pendiente</option>
+                        <option value="observado">Observado</option>
+                        <option value="atendido">Atendido</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Fecha Desde</label>
+                    <input type="date">
+                </div>
+                <div class="filter-group">
+                    <label>Fecha Hasta</label>
+                    <input type="date">
+                </div>
+                <button class="btn">Buscar</button>
+                <button class="btn">Limpiar</button>
+            </div>
+        </div>
+
+        <!-- Pendientes de Atención -->
+        <div class="table-section">
+            <div class="table-header">
+                Pendientes de Atención
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N° Ticket</th>
+                            <th>Solicitante</th>
+                            <th>Sucursal</th>
+                            <th>Matrícula del Colaborador</th>
+                            <th>Justificación</th>
+                            <th>Documento</th>
+                            <th>Comentarios</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LIC-2025-007</td>
+                            <td>Juan Pérez García</td>
+                            <td>Lima Centro</td>
+                            <td>421210</td>
+                            <td>Licencia médica</td>
+                            <td>📄 certificado.pdf</td>
+                            <td>---</td>
+                            <td><span class="status-badge status-pending">Pendiente</span></td>
+                            <td>
+                                <button class="btn" onclick="window.location.href='Confirmacion_Licencias.html'"
+                                    style="padding: 5px 10px; font-size: 12px;">Ver</button> <button class="btn"
+                                    style="padding: 5px 10px; font-size: 12px;">Editar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIC-2025-006</td>
+                            <td>María García</td>
+                            <td>Lima Norte</td>
+                            <td>421211</td>
+                            <td>Licencia familiar</td>
+                            <td>📄 solicitud.pdf</td>
+                            <td>---</td>
+                            <td><span class="status-badge status-pending">Pendiente</span></td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Ver</button>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Editar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIC-2025-005</td>
+                            <td>Carlos López</td>
+                            <td>Lima Sur</td>
+                            <td>421212</td>
+                            <td>Licencia personal</td>
+                            <td>📄 justificacion.pdf</td>
+                            <td>---</td>
+                            <td><span class="status-badge status-pending">Pendiente</span></td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Ver</button>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Observados -->
+        <div class="table-section">
+            <div class="table-header">
+                Observados
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N° Ticket</th>
+                            <th>Solicitante</th>
+                            <th>Sucursal</th>
+                            <th>Matrícula del Colaborador</th>
+                            <th>Justificación</th>
+                            <th>Documento</th>
+                            <th>Comentarios</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LIC-2025-004</td>
+                            <td>Ana Martínez</td>
+                            <td>Lima Este</td>
+                            <td>421213</td>
+                            <td>Licencia médica</td>
+                            <td>📄 certificado.pdf</td>
+                            <td>Documentos incompletos</td>
+                            <td><span class="status-badge status-observed">Observado</span></td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Ver</button>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Editar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIC-2025-003</td>
+                            <td>Pedro Rodríguez</td>
+                            <td>Lima Oeste</td>
+                            <td>421214</td>
+                            <td>Licencia familiar</td>
+                            <td>📄 solicitud.pdf</td>
+                            <td>Fecha incorrecta</td>
+                            <td><span class="status-badge status-observed">Observado</span></td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Ver</button>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Atendidos -->
+        <div class="table-section">
+            <div class="table-header">
+                Atendidos
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N° Ticket</th>
+                            <th>Solicitante</th>
+                            <th>Sucursal</th>
+                            <th>Matrícula del Colaborador</th>
+                            <th>Justificación</th>
+                            <th>Documento</th>
+                            <th>Comentarios</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LIC-2025-002</td>
+                            <td>Luis Herrera</td>
+                            <td>Lima Centro</td>
+                            <td>421215</td>
+                            <td>Licencia médica</td>
+                            <td>📄 certificado.pdf</td>
+                            <td>Procesada correctamente</td>
+                            <td><span class="status-badge status-attended">Atendido</span></td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Ver</button>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Imprimir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIC-2025-001</td>
+                            <td>Carmen Silva</td>
+                            <td>Lima Norte</td>
+                            <td>421216</td>
+                            <td>Licencia personal</td>
+                            <td>📄 solicitud.pdf</td>
+                            <td>Procesada correctamente</td>
+                            <td><span class="status-badge status-attended">Atendido</span></td>
+                            <td>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Ver</button>
+                                <button class="btn" style="padding: 5px 10px; font-size: 12px;">Imprimir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 30px;">
+            <button class="btn">« Anterior</button>
+            <span style="padding: 0 20px;">Página 1 de 5</span>
+            <button class="btn">Siguiente »</button>
+        </div>
+    </div>
+</body>
+
+</html>

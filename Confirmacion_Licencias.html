@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Licencia - Wireframe</title>
+    <link rel="stylesheet" href="style/styles_C_L.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Detalle de Licencia</h1>
+    </div>
+    
+    <div class="container">
+        <!-- Navigation -->
+        <div class="nav">
+            <div class="breadcrumb">
+                <a href="Estado_Licencias.html" onclick="goBack()"> Dashboard</a> > 
+                <span>Ver Licencia LIC-2025-001</span>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- License Details -->
+            <div class="license-details">
+                <div class="section-title">Información de la Licencia</div>
+                
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">N° Ticket</div>
+                        <div class="detail-value">LIC-2025-001</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Estado Actual</div>
+                        <div class="detail-value">
+                            <span class="status-badge status-pending">Pendiente</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Solicitante</div>
+                        <div class="detail-value">Juan Pérez García</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Sucursal</div>
+                        <div class="detail-value">Lima Centro</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Matrícula del Colaborador</div>
+                        <div class="detail-value">421210</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Fecha de Solicitud</div>
+                        <div class="detail-value">15/07/2025</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Tipo de Licencia</div>
+                        <div class="detail-value">Licencia Médica</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Días Solicitados</div>
+                        <div class="detail-value">5 días</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Fecha Inicio</div>
+                        <div class="detail-value">20/07/2024</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Fecha Fin</div>
+                        <div class="detail-value">24/07/2024</div>
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <div class="detail-label">Justificación</div>
+                    <div class="detail-value">
+                        Licencia médica por intervención quirúrgica menor. Requiere reposo domiciliario según indicación médica adjunta en certificado.
+                    </div>
+                </div>
+                
+                <div class="detail-item" style="margin-top: 20px;">
+                    <div class="detail-label">Comentarios del Solicitante</div>
+                    <div class="detail-value">
+                        Adjunto certificado médico original y copia de la orden de reposo. Disponible para cualquier consulta adicional.
+                    </div>
+                </div>
+                
+                <!-- Documents Section -->
+                <div class="documents-section">
+                    <div class="section-title">Documentos Adjuntos</div>
+                    
+                    <div class="document-item">
+                        <div class="document-icon">📄</div>
+                        <div class="document-info">
+                            <div class="document-name">Certificado_Medico_Juan_Perez.pdf</div>
+                            <div class="document-size">245 KB - Subido el 15/07/2024</div>
+                        </div>
+                        <div class="document-actions">
+                            <button class="btn" style="padding: 8px 15px; font-size: 12px;">Ver</button>
+                            <button class="btn" style="padding: 8px 15px; font-size: 12px;">Descargar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="document-item">
+                        <div class="document-icon">📄</div>
+                        <div class="document-info">
+                            <div class="document-name">Orden_Reposo_Medico.pdf</div>
+                            <div class="document-size">189 KB - Subido el 15/07/2024</div>
+                        </div>
+                        <div class="document-actions">
+                            <button class="btn" style="padding: 8px 15px; font-size: 12px;">Ver</button>
+                            <button class="btn" style="padding: 8px 15px; font-size: 12px;">Descargar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="section-title">Historial</div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">15/07/2024<br>14:30</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Solicitud Creada</div>
+                            <div class="timeline-desc">Licencia médica solicitada por Juan Pérez</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">15/07/2024<br>14:35</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Documentos Adjuntados</div>
+                            <div class="timeline-desc">Certificado médico y orden de reposo subidos</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">16/07/2024<br>09:15</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Asignado para Revisión</div>
+                            <div class="timeline-desc">Ticket asignado al departamento de RRHH</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-title">Datos del Gestor</div>
+                <div class="detail-item">
+                    <div class="detail-label">Asignado a</div>
+                    <div class="detail-value">María González</div>
+                </div>
+                <div class="detail-item" style="margin-top: 15px;">
+                    <div class="detail-label">Departamento</div>
+                    <div class="detail-value">Recursos Humanos</div>
+                </div>
+                <div class="detail-item" style="margin-top: 15px;">
+                    <div class="detail-label">Prioridad</div>
+                    <div class="detail-value">Media</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-back" onclick="window.location.href='Estado_Licencias.html'">← Volver al Dashboard</button>
+            <button class="btn btn-confirm" onclick="showConfirmModal()">✓ Confirmar Licencia</button>
+            <button class="btn btn-reject" onclick="showRejectModal()">✗ Rechazar Licencia</button>
+        </div>
+    </div>
+    
+    <!-- Modal de Confirmación -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Confirmar Licencia</span>
+                <span class="close" onclick="closeModal('confirmModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="highlight-box">
+                    <div class="highlight-text">⚠️ CONFIRMACIÓN DE ACCIÓN</div>
+                </div>
+                <div class="modal-text">
+                    ¿Está seguro de que desea <strong>CONFIRMAR</strong> esta licencia?
+                </div>
+                <div class="modal-text">
+                    <strong>Ticket:</strong> LIC-2024-001<br>
+                    <strong>Solicitante:</strong> Juan Pérez García<br>
+                    <strong>Tipo:</strong> Licencia Médica<br>
+                    <strong>Período:</strong> 20/07/2024 - 24/07/2024 (5 días)
+                </div>
+                <div class="modal-text">
+                    Una vez confirmada, la licencia será <strong>APROBADA</strong> y se notificará automáticamente al solicitante y al departamento correspondiente.
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Comentarios de Aprobación (Opcional)</label>
+                    <textarea class="form-textarea" placeholder="Ingrese comentarios adicionales sobre la aprobación..."></textarea>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn" onclick="closeModal('confirmModal')">Cancelar</button>
+                <button class="btn btn-confirm" onclick="confirmLicense()">Sí, Confirmar Licencia</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Rechazo -->
+    <div id="rejectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Rechazar Licencia</span>
+                <span class="close" onclick="closeModal('rejectModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="highlight-box">
+                    <div class="highlight-text">⚠️ MOTIVO DE RECHAZO REQUERIDO</div>
+                </div>
+                <div class="modal-text">
+                    Está a punto de <strong>RECHAZAR</strong> esta licencia. Debe proporcionar un motivo detallado.
+                </div>
+                <div class="modal-text">
+                    <strong>Ticket:</strong> LIC-2024-001<br>
+                    <strong>Solicitante:</strong> Juan Pérez García<br>
+                    <strong>Tipo:</strong> Licencia Médica
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Motivo Principal del Rechazo *</label>
+                    <select class="form-select" id="rejectReason">
+                        <option value="">Seleccione el motivo principal</option>
+                        <option value="documentos_incompletos">Documentos incompletos</option>
+                        <option value="documentos_invalidos">Documentos inválidos o no válidos</option>
+                        <option value="fechas_incorrectas">Fechas incorrectas o conflictivas</option>
+                        <option value="no_cumple_politicas">No cumple con políticas de la empresa</option>
+                        <option value="informacion_insuficiente">Información insuficiente</option>
+                        <option value="fuera_plazo">Solicitud fuera de plazo</option>
+                        <option value="otro">Otro motivo</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Descripción Detallada del Motivo *</label>
+                    <textarea class="form-textarea" placeholder="Explique detalladamente el motivo del rechazo. Esta información será enviada al solicitante..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Acciones Recomendadas para el Solicitante</label>
+                    <textarea class="form-textarea" placeholder="Indique qué debe hacer el solicitante para corregir la solicitud (opcional)..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">¿Permitir Re-solicitud?</label>
+                    <select class="form-select">
+                        <option value="si">Sí, permitir nueva solicitud</option>
+                        <option value="no">No, rechazar definitivamente</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn" onclick="closeModal('rejectModal')">Cancelar</button>
+                <button class="btn btn-reject" onclick="rejectLicense()">Rechazar Licencia</button>
+            </div>
+        </div>
+    </div>
+<script src="JS/index_C_L.js"></script>
+</body>
+</html>
