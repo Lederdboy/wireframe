@@ -10,12 +10,60 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('end_date').min = today;
 
   window.selectOption = function (element, value) {
-    document.querySelectorAll('.radio-option').forEach(option => {
-      option.classList.remove('selected');
-    });
-    element.classList.add('selected');
-    element.querySelector('input[type="radio"]').checked = true;
-  };
+  console.log('Seleccionado:', value);
+
+  // Quitar clases
+  document.querySelectorAll('.radio-option').forEach(option => {
+    option.classList.remove('selected');
+  });
+  element.classList.add('selected');
+  element.querySelector('input[type="radio"]').checked = true;
+
+  // Obtener y validar el SELECT
+  const select = document.getElementById('reason');
+  if (!select) {
+    console.warn('❌ No se encontró el elemento <select id="reason">');
+    return;
+  }
+
+  console.log('✅ Select encontrado, actualizando opciones...');
+
+  select.innerHTML = '';
+
+  let opciones = [];
+
+  if (value === 'con-goce') {
+    opciones = [
+      { value: 'medica', text: 'Licencia Médica' },
+      { value: 'maternidad', text: 'Licencia por Maternidad' },
+      { value: 'vacaciones', text: 'Vacaciones Programadas' }
+    ];
+  } else {
+    opciones = [
+      { value: 'personal', text: 'Licencia Personal' },
+      { value: 'familiar', text: 'Emergencia Familiar' },
+      { value: 'otros', text: 'Otros (sin remuneración)' }
+    ];
+  }
+
+  const defaultOption = document.createElement('option');
+  defaultOption.value = '';
+  defaultOption.textContent = 'Seleccionar motivo';
+  defaultOption.disabled = true;
+  defaultOption.selected = true;
+  select.appendChild(defaultOption);
+
+  opciones.forEach(op => {
+    const option = document.createElement('option');
+    option.value = op.value;
+    option.textContent = op.text;
+    select.appendChild(option);
+  });
+
+  console.log('✅ Opciones insertadas:', opciones);
+};
+
+
 
   window.nextStep = function () {
     if (validateStep()) {
@@ -115,6 +163,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+
+
   function showNotification(message, type = 'error') {
     const notification = document.getElementById('notification');
     notification.textContent = message;
@@ -211,6 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
       container.appendChild(fileItem);
     });
   }
+  
 
   window.removeFile = function (index) {
     uploadedFiles.splice(index, 1);

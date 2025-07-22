@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitud de Licencia - Sistema PC</title>
-    <link rel="stylesheet" href="./style/style_S_L.css">
+    <link rel="stylesheet" href="/style/style_S_L.css">
 </head>
 
 <body>
@@ -74,12 +74,13 @@
                                 <option value="norte">Sucursal Norte</option>
                                 <option value="sur">Sucursal Sur</option>
                                 <option value="este">Sucursal Este</option>
-                                <option value="oeste">Sucursal Oeste</option>
+                                <option value="oeste"></option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="employee_id">Matrícula del Colaborador <span class="required">*</span></label>
-                            <input type="text" id="employee_id" class="form-control" value="4421210" required>
+                            <input type="text" id="employee_id" class="form-control" value="" placeholder="72454708"
+                                required>
                         </div>
                     </div>
                 </div>
@@ -109,12 +110,6 @@
                         <label for="reason">Tipo de Licencia <span class="required">*</span></label>
                         <select id="reason" class="form-control" required>
                             <option value="">Seleccionar motivo</option>
-                            <option value="medica">Licencia Médica</option>
-                            <option value="personal">Licencia Personal</option>
-                            <option value="maternidad">Licencia de Maternidad</option>
-                            <option value="paternidad">Licencia de Paternidad</option>
-                            <option value="familiar">Emergencia Familiar</option>
-                            <option value="otros">Otros</option>
                         </select>
                     </div>
 
@@ -173,7 +168,7 @@
 
         <!-- Navegacion -->
         <div class="navigation" style="display: flex; align-items: center;">
-            <button class="btn1 btn-back" id="volverDash" onclick="window.location.href='./index.html'"
+            <button class="btn1 btn-back" id="volverDash" onclick="window.location.href='./Dashboard_Colaborador.html'"
                 style="margin-right: 10px;">
                 ← Volver al Dashboard
             </button>
@@ -192,5 +187,6 @@
 
 
 </body>
-<script src="./js/index_S_L.js"></script>
+<script src="/js/index_S_L.js"></script>
+
 </html>

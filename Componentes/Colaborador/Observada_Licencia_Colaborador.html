@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Licencia Observada - Wireframe</title>
+    <link rel="stylesheet" href="/style/style_O_L_C.css">
+</head>
+<body>
+    <header class="header">
+        <h1>DETALLE DE LICENCIA</h1>
+        <div class="user-info">
+            <span>Juan Pérez García</span>
+            <span>ID: 421210</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/Componentes/Colaborador/Historial_Licencias_Colaborador.html" onclick="history.back()">← Mi Historial de Licencias</a> > Detalle de Licencia
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Solicitud #LIC-2025-005</h2>
+                <span class="status-badge status-observada">Observada</span>
+            </div>
+            
+            <div class="card-body">
+                <div class="alert-warning">
+                    <div class="alert-icon">⚠️</div>
+                    <div class="alert-content">
+                        <h4>Su solicitud requiere atención</h4>
+                        <p>Se han encontrado observaciones que necesitan ser corregidas antes de aprobar su licencia. Revise los comentarios y realice las correcciones necesarias.</p>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-group">
+                        <div class="info-label">Tipo de Licencia</div>
+                        <div class="info-value">Licencia Familiar</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Motivo</div>
+                        <div class="info-value">Cuidado de familiar enfermo</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Fecha de Inicio</div>
+                        <div class="info-value">08/07/2025</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Fecha de Fin</div>
+                        <div class="info-value">09/07/2025</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Días Solicitados</div>
+                        <div class="info-value">2 días</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Fecha de Solicitud</div>
+                        <div class="info-value">05/07/2025</div>
+                    </div>
+                </div>
+
+                <div class="observaciones-card">
+                    <div class="observaciones-title">
+                        🔍 Observaciones del Supervisor
+                    </div>
+                    <ul class="observaciones-list">
+                        <li>Falta documentación médica que justifique el cuidado del familiar</li>
+                        <li>El certificado médico presentado no especifica el grado de parentesco</li>
+                        <li>Se requiere documento de identidad del familiar a cuidar</li>
+                    </ul>
+                    <div class="observaciones-meta">
+                        <strong>Supervisado por:</strong> María González - Recursos Humanos<br>
+                        <strong>Fecha de observación:</strong> 06/07/2025 a las 2:30 PM
+                    </div>
+                </div>
+
+                <div class="required-docs">
+                    <h4>📋 Documentos Requeridos para Corrección</h4>
+                    <ul>
+                        <li>Certificado médico actualizado que especifique el parentesco</li>
+                        <li>Copia de documento de identidad del familiar</li>
+                        <li>Declaración jurada de parentesco (formato disponible en RR.HH.)</li>
+                    </ul>
+                </div>
+
+                <h3 class="section-title">Documentos Actuales</h3>
+                <div class="document-item">
+                    <div class="document-icon">PDF</div>
+                    <div class="document-info">
+                        <div class="document-name">justificacion.pdf</div>
+                        <div class="document-meta">Subido el 05/07/2025 • 180 KB • <span style="color: #dc3545;">Observado</span></div>
+                    </div>
+                    <a href="#" class="btn-ver">Ver</a>
+                </div>
+
+                <h3 class="section-title">Historial de la Solicitud</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">05/07/2025 - 9:15 AM</div>
+                            <div class="timeline-text"><strong>Solicitud creada</strong> - La solicitud fue enviada para revisión</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">05/07/2025 - 9:18 AM</div>
+                            <div class="timeline-text"><strong>Documento adjuntado</strong> - justificacion.pdf fue agregado a la solicitud</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">06/07/2025 - 10:00 AM</div>
+                            <div class="timeline-text"><strong>En revisión</strong> - María González inició la evaluación</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot warning"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">06/07/2025 - 2:30 PM</div>
+                            <div class="timeline-text"><strong>Solicitud observada</strong> - Se requieren correcciones en la documentación</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <a href="/Componentes/Colaborador/Historial_Licencias_Colaborador.html" class="btn btn-secondary">Volver al Historial</a>
+                    <a href="#" class="btn btn-warning">Adjuntar Documentos</a>
+                    <a href="#" class="btn btn-success">Corregir y Reenviar</a>
+                    <a href="#" class="btn btn-danger">Cancelar Solicitud</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/index_D_L_C.js"></script>
+</body>
+</html>

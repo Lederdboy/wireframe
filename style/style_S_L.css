@@ -285,15 +285,15 @@ body {
 .btn1 {
     padding: 15px 30px;
     border: 2px solid #2c3e50;
-    background: white;
-    color: #2c3e50;
+    background: #2c3e50;
+    color: #ffffff;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
     border-radius: 6px;
     transition: all 0.3s ease;
     min-width: 120px;
-    margin-right: auto; /* Esto empujará el botón hacia la izquierda */
+    margin-right: auto; 
 }
 
 .btn:hover {

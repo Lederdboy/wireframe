@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Licencias - Colaborador</title>
+    <link rel="stylesheet" href="/style/style_H_L_C.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header-title">MI HISTORIAL DE LICENCIAS</h1>
+        <div class="header-user">
+            <div class="user-info">
+                <div class="user-name">Juan Pérez García</div>
+                <div class="user-id">ID: 421210</div>
+            </div>
+            <button class="logout-btn" onclick="window.location.href='Dashboard_Colaborador.html'">Salir</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Estadísticas -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number stat-pendientes">3</div>
+                <div class="stat-label">Pendientes de Aprobación</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number stat-aprobadas">12</div>
+                <div class="stat-label">Licencias Aprobadas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number stat-rechazadas">1</div>
+                <div class="stat-label">Licencias Rechazadas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number stat-total">16</div>
+                <div class="stat-label">Total de Solicitudes</div>
+            </div>
+        </div>
+
+        <!-- Barra de acciones -->
+        <div class="actions-bar">
+            <button class="nueva-licencia-btn" onclick="window.location.href='Solicitud_Licencia.html'">Generar Nueva Solicitud  +</button>
+            <div style="color: #718096; font-size: 14px;">
+                Última actualización: 21 Jul 2025, 10:30 AM
+            </div>
+        </div>
+
+        <!-- Filtros -->
+        <div class="filters-section">
+            <h3 class="filters-title">Filtros de Búsqueda</h3>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label>N° Ticket</label>
+                    <input type="text" placeholder="Ingrese número">
+                </div>
+                <div class="filter-group">
+                    <label>Tipo de Licencia</label>
+                    <select>
+                        <option>Todas</option>
+                        <option>Licencia médica</option>
+                        <option>Licencia familiar</option>
+                        <option>Licencia personal</option>
+                        <option>Vacaciones</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Estado</label>
+                    <select>
+                        <option>Todos</option>
+                        <option>Pendiente</option>
+                        <option>Aprobada</option>
+                        <option>Rechazada</option>
+                        <option>Observada</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Fecha Desde</label>
+                    <input type="date">
+                </div>
+                <div class="filter-group">
+                    <label>Fecha Hasta</label>
+                    <input type="date">
+                </div>
+                <div class="filter-buttons">
+                    <button class="btn btn-search">Buscar</button>
+                    <button class="btn btn-clear">Limpiar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de licencias -->
+        <div class="table-section">
+            <div class="table-header">MIS SOLICITUDES DE LICENCIA</div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N° Ticket</th>
+                            <th>Tipo de Licencia</th>
+                            <th>Fecha Inicio</th>
+                            <th>Fecha Fin</th>
+                            <th>Días Solicitados</th>
+                            <th>Motivo</th>
+                            <th>Estado</th>
+                            <th>Fecha Solicitud</th>
+                            <th>Documento</th>
+                            <th>Observaciones</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LIC-2025-007</td>
+                            <td>Licencia médica</td>
+                            <td>25/07/2025</td>
+                            <td>27/07/2025</td>
+                            <td>3 días</td>
+                            <td>Consulta médica especializada</td>
+                            <td><span class="status-badge status-pendiente">Pendiente</span></td>
+                            <td>21/07/2025</td>
+                            <td><a href="#" class="document-link">📄 certificado.pdf</a></td>
+                            <td>---</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="btn-view" onclick="window.location.href='Pendiente_Licencia_Colaborador.html'">Ver</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIC-2025-006</td>
+                            <td>Vacaciones</td>
+                            <td>15/07/2025</td>
+                            <td>19/07/2025</td>
+                            <td>5 días</td>
+                            <td>Descanso familiar</td>
+                            <td><span class="status-badge status-rechazada">Rechazado</span></td>
+                            <td>10/07/2025</td>
+                            <td>---</td>
+                            <td>No tiene Documentos adjuntos</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="btn-view" onclick="window.location.href='Rechazado_Licencia_Colaborador.html'">Ver</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIC-2025-005</td>
+                            <td>Licencia familiar</td>
+                            <td>08/07/2025</td>
+                            <td>09/07/2025</td>
+                            <td>2 días</td>
+                            <td>Cuidado de familiar enfermo</td>
+                            <td><span class="status-badge status-observada">Observada</span></td>
+                            <td>05/07/2025</td>
+                            <td><a href="#" class="document-link">📄 justificacion.pdf</a></td>
+                            <td>Falta documentación médica</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="btn-view" onclick="window.location.href='Observada_Licencia_Colaborador.html'">Ver</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIC-2025-004</td>
+                            <td>Licencia personal</td>
+                            <td>01/07/2025</td>
+                            <td>01/07/2025</td>
+                            <td>1 día</td>
+                            <td>Trámites personales</td>
+                            <td><span class="status-badge status-aprobada">Aprobada</span></td>
+                            <td>28/06/2025</td>
+                            <td><a href="#" class="document-link">📄 certificado.pdf</a></td>
+                            <td>---</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="btn-view">Ver</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LIC-2025-003</td>
+                            <td>Licencia médica</td>
+                            <td>20/06/2025</td>
+                            <td>21/06/2025</td>
+                            <td>2 días</td>
+                            <td>Procedimiento médico</td>
+                            <td><span class="status-badge status-rechazada">Rechazada</span></td>
+                            <td>18/06/2025</td>
+                            <td><a href="#" class="document-link">📄 certificado.pdf</a></td>
+                            <td>Certificado médico no válido</td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="btn-view">Ver</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/js/index_H_L_C.js"></script>
+</body>
+</html>

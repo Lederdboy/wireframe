@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - RR.HH: Licencias de Personal</title>
+    <link rel="stylesheet" href="/style/style_L.css">
+</head>
+
+<body>
+
+    <!-- Modal de error -->
+    <div id="modal-overlay" style="display: none;">
+        <div id="modal-box">
+            <h2>Error de inicio de sesión</h2>
+            <p>⚠️ Usuario o contraseña incorrectos.</p>
+            <button onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+
+    <div class="login-container">
+        <div class="background-overlay"></div>
+        <div class="header">
+            <img src="/Imagenes/g4ss.png" alt="Logo" class="logo-img">
+            <h1 class="title">RR.HH: LICENCIAS DE PERSONAL</h1>
+            <p class="subtitle">Accede a tu cuenta para continuar</p>
+        </div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Recordar sesión</label>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#" onclick="alert('Funcionalidad no implementada en wireframe')">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+        <div class="footer">
+            <p>&copy; 2025 G4S. Todos los derechos reservados.</p>
+            <p>Sistema de Gestión de Recursos Humanos</p>
+        </div>
+    </div>
+    <script src="/js/index_L.js"></script>
+</body>
+
+</html>

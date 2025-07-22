@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Licencia Rechazada - Wireframe</title>
+    <link rel="stylesheet" href="/style/style_R_L_C.css">
+</head>
+<body>
+    <header class="header">
+        <h1>DETALLE DE LICENCIA</h1>
+        <div class="user-info">
+            <span>Juan Pérez García</span>
+            <span>ID: 421210</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/Componentes/Colaborador/Historial_Licencias_Colaborador.html" onclick="history.back()">← Mi Historial de Licencias</a> > Detalle de Licencia
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Solicitud #LIC-2025-006</h2>
+                <span class="status-badge status-rechazada">Rechazada</span>
+            </div>
+            
+            <div class="card-body">
+                <div class="alert-danger">
+                    <div class="alert-icon">❌</div>
+                    <div class="alert-content">
+                        <h4>Solicitud Rechazada</h4>
+                        <p>Su solicitud de licencia ha sido rechazada debido a que no cumple con los requisitos establecidos. Revise los motivos del rechazo y las opciones disponibles para proceder.</p>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-group">
+                        <div class="info-label">Tipo de Licencia</div>
+                        <div class="info-value">Vacaciones</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Motivo</div>
+                        <div class="info-value">Descanso familiar</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Fecha de Inicio Solicitada</div>
+                        <div class="info-value">15/07/2025</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Fecha de Fin Solicitada</div>
+                        <div class="info-value">19/07/2025</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Días Solicitados</div>
+                        <div class="info-value">5 días</div>
+                    </div>
+                    
+                    <div class="info-group">
+                        <div class="info-label">Fecha de Rechazo</div>
+                        <div class="info-value">10/07/2025</div>
+                    </div>
+                </div>
+
+                <div class="rechazo-card">
+                    <div class="rechazo-title">
+                        🚫 Motivos del Rechazo
+                    </div>
+                    <div class="motivos-rechazo">
+                        <h5>Razones específicas:</h5>
+                        <ul class="motivos-list">
+                            <li>No cuenta con días de vacaciones suficientes disponibles (solo tiene 2 días acumulados)</li>
+                            <li>Las fechas solicitadas coinciden con período de cierre contable obligatorio</li>
+                            <li>Excede el límite de personal en vacaciones simultáneas para su área</li>
+                        </ul>
+                    </div>
+                    <div class="rechazo-meta">
+                        <strong>Revisado por:</strong> Carlos Mendoza - Jefe de Recursos Humanos<br>
+                        <strong>Fecha de rechazo:</strong> 10/07/2025 a las 4:45 PM<br>
+                        <strong>Política aplicada:</strong> Manual de Vacaciones v2.1 - Sección 3.2 y 4.1
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h4>💡 Opciones Disponibles</h4>
+                    <ul>
+                        <li><strong>Solicitar fechas alternativas:</strong> Puede presentar una nueva solicitud con fechas fuera del período de cierre contable</li>
+                        <li><strong>Solicitud parcial:</strong> Solicitar solo los 2 días disponibles que tiene acumulados</li>
+                        <li><strong>Licencia sin goce:</strong> Solicitar licencia sin goce de haberes para los días adicionales</li>
+                        <li><strong>Esperar acumulación:</strong> Aguardar hasta acumular más días de vacaciones</li>
+                    </ul>
+                </div>
+
+                <div class="appeal-info">
+                    <h4>📝 Derecho a Apelación</h4>
+                    <p>Si considera que el rechazo no es procedente, puede presentar una apelación dentro de los <strong>5 días hábiles</strong> siguientes a la notificación. La apelación debe incluir la justificación correspondiente y será evaluada por el Comité de Recursos Humanos.</p>
+                </div>
+
+                <h3 class="section-title">Documentos de la Solicitud</h3>
+                <p style="color: #6c757d; font-style: italic; margin-bottom: 15px;">No tiene documentos adjuntos</p>
+
+                <h3 class="section-title">Historial de la Solicitud</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">08/07/2025 - 11:20 AM</div>
+                            <div class="timeline-text"><strong>Solicitud creada</strong> - La solicitud fue enviada para revisión</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">09/07/2025 - 9:00 AM</div>
+                            <div class="timeline-text"><strong>En revisión</strong> - Carlos Mendoza inició la evaluación</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">10/07/2025 - 2:15 PM</div>
+                            <div class="timeline-text"><strong>Verificación de disponibilidad</strong> - Se revisaron días acumulados y calendario</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot rejected"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">10/07/2025 - 4:45 PM</div>
+                            <div class="timeline-text"><strong>Solicitud rechazada</strong> - No cumple con los requisitos establecidos</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <a href="/Componentes/Colaborador/Historial_Licencias_Colaborador.html" class="btn btn-secondary">Volver al Historial</a>
+                    <a href="#" class="btn btn-warning">Presentar Apelación</a>
+                    <a href="/Componentes/Colaborador/Solicitud_Licencia.html" class="btn btn-primary">Nueva Solicitud</a>
+                    <a href="#" class="btn btn-success">Consultar Disponibilidad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/js/index_R_L_C.js"></script>
+</body>
+</html>
