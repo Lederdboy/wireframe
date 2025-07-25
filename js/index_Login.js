@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('usuarioRecordado');
       }
       if (usuario === 'supervisor') {
-        window.location.href = '/Componentes/Supervisor/Dashboard_Supervisor.html';
+        window.location.href = '/Componentes/Dashboard_Supervisor.html';
       } else if (usuario === 'colaborador') {
-        window.location.href = '/Componentes/Colaborador/Dashboard_Colaborador.html';
+        window.location.href = '/Componentes/Dashboard_Colaborador.html';
       } else if (usuario === 'recursos') {
-        window.location.href = '/Componentes/Recursos/Dashboard_Recursos.html';
+        window.location.href = '/Componentes/Dashboard_Recursos.html';
       }
     } else {
       passwordInput.value = '';
