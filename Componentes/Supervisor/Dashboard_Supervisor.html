@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wireframe RR.HH</title>
-    <link rel="stylesheet" href="/style/Colaborador/style_Dashboard_Colaborador.css">
+    <link rel="stylesheet" href="/style/Supervisor/style_Dashboard_Supervisor.css">
 </head>
 <body>
     <!-- Header -->
     <div class="header">
         <img src="/Imagenes/g4ss.png" alt="Logo" class="logo-img">
-        <div class="title">RR.HH: LICENCIAS DE PERSONAL - DASHBOARD COLABORADOR</div>
+        <div class="title">RR.HH: LICENCIAS DE PERSONAL</div>
         <button class="logout-button" onclick="window.location.href='/index.html'">Cerrar Sesión</button>
     </div>
 
     <!-- Main Container -->
     <div class="main-container">
         <div class="modules-grid">
-            <!-- Generar Solicitud -->
-            <div class="module-card" onclick="window.location.href='/Componentes/Colaborador/Solicitud_Licencia.html'">
-                <div class="module-icon generar">
-                    <div class="module-visual icon-docs">📄</div>
+            <!-- Estado de Atenciones -->
+            <div class="module-card" onclick="window.location.href='Estado_Licencias.html'">
+                <div class="module-icon estado">
+                    <div class="module-visual icon-search">🔍</div>
                 </div>
                 <div class="module-title">
-                    GENERAR<br>SOLICITUD
+                     ESTADO<br>DE LICENCIAS
                 </div>
             </div>
 
             <!-- Indicadores -->
-            <div class="module-card" onclick="window.location.href='/Componentes/Colaborador/Historial_Licencias_Colaborador.html'">
+            <div class="module-card" onclick="window.location.href='Dashboard_Secundario.html'">
                 <div class="module-icon indicadores">
                     <div class="module-visual icon-chart">📊</div>
                 </div>
                 <div class="module-title">
-                    HISTORIAL DE<br>LICENCIAS
+                    INDICADORES
                 </div>
             </div>            
         </div>

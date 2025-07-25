@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Imagenes/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.login-container {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #dc143c;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    border-radius: 8px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.logo-img {
+    width: 85px;
+    height: 70px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.title {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    background: #ffffff;
+    color: #000000;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #dc143c;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #333333;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 0.5rem;
+    width: auto;
+    accent-color: #dc143c;
+}
+
+.remember-me label {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+
+.forgot-password a {
+    color: #dc143c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.forgot-password a:hover {
+    color: #b91c3c;
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #333333, #2a2a2a);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+.divider {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e5e5e5;
+    z-index: 1;
+}
+
+.divider span {
+    background: white;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.alternative-login {
+    display: flex;
+    gap: 1rem;
+}
+
+.alt-button {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #000000;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.alt-button:hover {
+    background: #f8f8f8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e5e5e5;
+    color: #333333;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Modal Styles */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#modal-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    animation: popin 0.3s ease;
+    border: 1px solid #e5e5e5;
+}
+
+#modal-box h2 {
+    margin-bottom: 1rem;
+    color: #dc143c;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#modal-box p {
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+#modal-box button {
+    padding: 10px 20px;
+    background: #dc143c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+}
+
+#modal-box button:hover {
+    background: #b91c3c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(220, 20, 60, 0.3);
+}
+
+@keyframes popin {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Corporate Brand Accent */
+.brand-accent {
+    background: linear-gradient(45deg, #000000, #dc143c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #dc143c;
+}
+
+.error-highlight {
+    background: #dc143c;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.success-highlight {
+    background: #000000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        margin: 1rem;
+        padding: 2rem;
+        max-width: 380px;
+    }
+    
+    .header {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+}

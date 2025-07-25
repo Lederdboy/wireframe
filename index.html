@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe RR.HH</title>
-    <link rel="stylesheet" href="./style/index.css">
+    <title>Login - RR.HH: Licencias de Personal</title>
+    <link rel="stylesheet" href="/style/style_Login.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <div class="header">
-        <img src="./Imagenes/g4ss.png" alt="Logo" class="logo-img">
-        <div class="title">RR.HH: LICENCIAS DE PERSONAL</div>
-        <button class="logout-button" onclick="window.location.href='Login.html'">Cerrar Sesión</button>
-    </div>
 
-    <!-- Main Container -->
-    <div class="main-container">
-        <div class="modules-grid">
-            <!-- Generar Solicitud -->
-            <div class="module-card" onclick="window.location.href='Solicitud_Licencia.html'">
-                <div class="module-icon generar">
-                    <div class="module-visual icon-docs">📄</div>
-                </div>
-                <div class="module-title">
-                    GENERAR<br>SOLICITUD
-                </div>
-            </div>
-
-            <!-- Estado de Atenciones -->
-            <div class="module-card" onclick="window.location.href='Estado_Licencias.html'">
-                <div class="module-icon estado">
-                    <div class="module-visual icon-search">🔍</div>
-                </div>
-                <div class="module-title">
-                    ESTADO DE<br>ATENCIONES
-                </div>
-            </div>
-
-            <!-- Indicadores -->
-            <div class="module-card" onclick="window.location.href='Dashboard_Secundario.html'">
-                <div class="module-icon indicadores">
-                    <div class="module-visual icon-chart">📊</div>
-                </div>
-                <div class="module-title">
-                    INDICADORES
-                </div>
-            </div>            
+    <!-- Modal de error -->
+    <div id="modal-overlay" style="display: none;">
+        <div id="modal-box">
+            <h2>Error de inicio de sesión</h2>
+            <p>⚠️ Usuario o contraseña incorrectos.</p>
+            <button onclick="closeAlert()">OK</button>
         </div>
     </div>
 
-    <!-- Bottom Section -->
-    <div class="bottom-section"></div>
+
+    <div class="login-container">
+        <div class="background-overlay"></div>
+        <div class="header">
+            <img src="/Imagenes/g4ss.png" alt="Logo" class="logo-img">
+            <h1 class="title">RR.HH: LICENCIAS DE PERSONAL</h1>
+            <p class="subtitle">Accede a tu cuenta para continuar</p>
+        </div>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Recordar sesión</label>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#" onclick="alert('Funcionalidad no implementada en wireframe')">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+        <div class="footer">
+            <p>&copy; 2025 G4S. Todos los derechos reservados.</p>
+            <p>Sistema de Gestión de Recursos Humanos</p>
+        </div>
+    </div>
+    <script src="/js/index_Login.js"></script>
 </body>
+
 </html>

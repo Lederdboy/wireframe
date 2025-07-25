@@ -6,22 +6,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .header {
-    background: linear-gradient(135deg, #5d7096, #6b7aa0);
+    background: linear-gradient(135deg, #000000, #1a1a1a);
     color: white;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .header h1 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .user-info {
@@ -31,13 +32,19 @@ body {
 }
 
 .btn-salir {
-    background: #dc3545;
+    background: #dc143c;
     color: white;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-salir:hover {
+    background: #b91c3c;
 }
 
 .container {
@@ -48,27 +55,28 @@ body {
 
 .breadcrumb {
     margin-bottom: 20px;
-    color: #666;
+    color: #333333;
     font-size: 14px;
 }
 
 .breadcrumb a {
-    color: #5d7096;
+    color: #000000;
     text-decoration: none;
 }
 
 .card {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     overflow: hidden;
     margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
 }
 
 .card-header {
-    background: #f8f9fa;
+    background: #f8f8f8;
     padding: 20px 30px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,22 +84,42 @@ body {
 
 .card-title {
     font-size: 20px;
-    font-weight: 600;
-    color: #333;
+    font-weight: 700;
+    color: #000000;
 }
 
 .status-badge {
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
+    display: inline-block;
+}
+
+.status-pendiente {
+    background: #fff3e0;
+    color: #ff6f00;
+    border: 2px solid #ff6f00;
+    font-weight: bold;
+}
+
+.status-aprobada {
+    background: #f8f9fa;
+    color: #000000;
+    border: 2px solid #000000;
 }
 
 .status-rechazada {
-    background: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
+    background: #ffe6e6;
+    color: #dc143c;
+    border: 2px solid #dc143c;
+}
+
+.status-observada {
+    background: #f0f0f0;
+    color: #333333;
+    border: 2px solid #333333;
 }
 
 .card-body {
@@ -99,85 +127,85 @@ body {
 }
 
 .alert-danger {
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
-    border-left: 4px solid #dc3545;
+    background: #ffe6e6;
+    border-left: 4px solid #dc143c;
     padding: 20px;
     border-radius: 6px;
-    margin-bottom: 25px;
     display: flex;
     align-items: flex-start;
     gap: 15px;
 }
 
 .alert-icon {
-    color: #dc3545;
+    color: #dc143c;
     font-size: 24px;
     margin-top: 2px;
 }
 
 .alert-content h4 {
     margin-bottom: 10px;
-    color: #721c24;
+    color: #dc143c;
     font-size: 18px;
 }
 
 .alert-content p {
-    color: #721c24;
-    margin: 0;
+    color: #dc143c;
     font-size: 14px;
     line-height: 1.5;
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     margin-bottom: 30px;
 }
 
 .info-group {
-    background: #f8f9fa;
+    background: #ffffff;
     padding: 20px;
     border-radius: 6px;
-    border-left: 4px solid #5d7096;
+    border-left: 4px solid #000000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid #e5e5e5;
 }
 
 .info-label {
     font-weight: 600;
-    color: #495057;
+    color: #333333;
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .info-value {
     font-size: 16px;
-    color: #333;
+    color: #000000;
+    font-weight: 500;
 }
 
 .section-title {
     font-size: 18px;
-    font-weight: 600;
-    color: #333;
+    font-weight: 700;
+    color: #000000;
     margin-bottom: 15px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #5d7096;
+    border-bottom: 2px solid #dc143c;
 }
 
 .rechazo-card {
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
-    border-left: 4px solid #dc3545;
+    background: #ffe6e6;
+    border-left: 4px solid #dc143c;
     border-radius: 6px;
     padding: 25px;
     margin-bottom: 25px;
+    border: 1px solid #dc143c;
 }
 
 .rechazo-title {
-    color: #721c24;
-    font-weight: 600;
+    color: #dc143c;
+    font-weight: 700;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -186,17 +214,18 @@ body {
 }
 
 .motivos-rechazo {
-    background: white;
+    background: #fff;
     padding: 20px;
     border-radius: 6px;
     margin-bottom: 15px;
+    border: 1px solid #dc143c;
 }
 
 .motivos-rechazo h5 {
-    color: #721c24;
+    color: #dc143c;
     margin-bottom: 12px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .motivos-list {
@@ -205,16 +234,15 @@ body {
 }
 
 .motivos-list li {
-    color: #721c24;
+    color: #dc143c;
     margin-bottom: 10px;
     padding-left: 25px;
     position: relative;
-    line-height: 1.4;
 }
 
 .motivos-list li::before {
     content: "✕";
-    color: #dc3545;
+    color: #dc143c;
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -223,22 +251,22 @@ body {
 
 .rechazo-meta {
     padding-top: 15px;
-    border-top: 1px solid #f5c6cb;
+    border-top: 1px solid #dc143c;
     font-size: 12px;
-    color: #721c24;
+    color: #dc143c;
 }
 
 .next-steps {
-    background: #e7f3ff;
-    border: 1px solid #b3d9ff;
-    border-left: 4px solid #007bff;
+    background: #f8f8f8;
+    border-left: 4px solid #000000;
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 25px;
+    border: 1px solid #000000;
 }
 
 .next-steps h4 {
-    color: #004085;
+    color: #000000;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -246,9 +274,10 @@ body {
 }
 
 .next-steps ul {
-    color: #004085;
+    color: #000000;
     margin-left: 20px;
     line-height: 1.6;
+    padding-left: 15px;
 }
 
 .next-steps li {
@@ -260,16 +289,16 @@ body {
     align-items: center;
     gap: 15px;
     padding: 15px;
-    background: #f8f9fa;
+    background: #f8f8f8;
     border-radius: 6px;
     margin-bottom: 10px;
-    border: 1px solid #e9ecef;
+    border: 1px solid #e5e5e5;
 }
 
 .document-icon {
     width: 40px;
     height: 40px;
-    background: #6c757d;
+    background: #000000;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -285,16 +314,16 @@ body {
 .document-name {
     font-weight: 600;
     margin-bottom: 4px;
-    color: #6c757d;
+    color: #000000;
 }
 
 .document-meta {
     font-size: 12px;
-    color: #6c757d;
+    color: #333333;
 }
 
 .btn-ver {
-    background: #6c757d;
+    background: #000000;
     color: white;
     padding: 6px 12px;
     border: none;
@@ -303,6 +332,11 @@ body {
     font-size: 12px;
     text-decoration: none;
     display: inline-block;
+    transition: background 0.2s;
+}
+
+.btn-ver:hover {
+    background: #333333;
 }
 
 .actions {
@@ -311,11 +345,11 @@ body {
     justify-content: flex-end;
     margin-top: 30px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
+    border-top: 2px solid #e5e5e5;
 }
 
 .btn {
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -327,29 +361,47 @@ body {
     transition: all 0.2s;
 }
 
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
 .btn-secondary {
-    background: #6c757d;
-    color: white;
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.btn-secondary:hover {
+    background: #f8f8f8;
 }
 
 .btn-primary {
-    background: #007bff;
+    background: #000000;
     color: white;
+}
+
+.btn-primary:hover {
+    background: #333333;
 }
 
 .btn-success {
-    background: #28a745;
-    color: white;
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.btn-success:hover {
+    background: #f8f8f8;
 }
 
 .btn-warning {
-    background: #ffc107;
-    color: #212529;
+    background: #dc143c;
+    color: white;
 }
 
-.btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+.btn-warning:hover {
+    background: #b91c3c;
 }
 
 .timeline {
@@ -366,13 +418,13 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #5d7096;
+    background: #000000;
     margin-top: 6px;
     flex-shrink: 0;
 }
 
 .timeline-dot.rejected {
-    background: #dc3545;
+    background: #dc143c;
 }
 
 .timeline-content {
@@ -381,31 +433,65 @@ body {
 
 .timeline-date {
     font-size: 12px;
-    color: #666;
+    color: #333333;
     margin-bottom: 4px;
 }
 
 .timeline-text {
     font-size: 14px;
+    color: #000000;
 }
 
 .appeal-info {
-    background: #fff3cd;
-    border: 1px solid #ffeaa7;
-    border-left: 4px solid #f39c12;
+    background: #fff3e0;
+    border-left: 4px solid #ff6f00;
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 25px;
+    border: 1px solid #ff6f00;
 }
 
 .appeal-info h4 {
-    color: #856404;
+    color: #ff6f00;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .appeal-info p {
-    color: #856404;
-    margin: 0;
+    color: #ff6f00;
     font-size: 14px;
     line-height: 1.5;
 }
+
+/* Estilos adicionales para reforzar la identidad G4S */
+.brand-accent {
+    background: linear-gradient(45deg, #000000, #dc143c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #dc143c;
+}
+
+.error-highlight {
+    background: #dc143c;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.success-highlight {
+    background: #000000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
